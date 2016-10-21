@@ -21,20 +21,20 @@ public class PPProblema020 {
         n1 = sc.nextInt();
         System.out.print("Introduce segundo número: ");
         n2 = sc.nextInt();
-        for(i=1;i<n1;i++){  // for para sumar todos los divisores propios de n1
+        for(i=1;i<n1;i++){  
              if(n1%i==0){
                 suma=suma+i;
              }
         }
-        // si la suma de los divisores de n1 es igual a n2
+        
         if(suma==n2){
            suma=0;
-           for(i=1;i<n2;i++){  // sumo los divisores propios de n2
+           for(i=1;i<n2;i++){  
                 if(n2%i==0){
                    suma=suma+i;
                }
            }
-        // si la suma de los divisores de n2 es igual a n1
+       
            if(suma==n1){
               System.out.println("Son Amigos");
            }else{
